@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import Intro from "./Intro";
 import Experience from "./Experience";
 import Projects from "./projects";
