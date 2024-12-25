@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.animation-scroll {
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
