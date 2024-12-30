@@ -89,11 +89,6 @@ const projectInformation: projectProps[] = [
 ];
 
 const Projects = () => {
-    const hoverStyle =
-        "[&_div>div:nth-of-type(2)_div:nth-of-type(1)_div:nth-of-type(2)_i:nth-of-type(1)]:hover:-translate-y-1 " +
-        "[&_div>div:nth-of-type(2)_div:nth-of-type(1)_div:nth-of-type(1)]:hover:text-text_primary_color " +
-        "[&_div>div:nth-of-type(2)_div:nth-of-type(1)_div:nth-of-type(2)]:hover:text-text_primary_color " +
-        "hover:cursor-pointer hover:bg-light_gradient hover:bg-opacity-40 hover:shadow-md";
     return (
         <>
             {projectInformation.map((project) => (
