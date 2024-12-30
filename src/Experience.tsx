@@ -38,7 +38,7 @@ const experienceInformation = [
 
 const Experience = () => {
     const hoverStyle =
-        "[&_div>div:nth-of-type(2)_div:nth-of-type(1)_div:nth-of-type(2)_i:nth-of-type(1)]:hover:-translate-y-1 " +
+        "[&_div>div:nth-of-type(1)_i:nth-of-type(1)]:hover:-translate-y-1 " +
         "hover:cursor-pointer hover:shadow-lg";
     return (
         <>
@@ -49,26 +49,21 @@ const Experience = () => {
                         hoverStyle
                     }
                 >
-                    <div className="flex flex-col gap-4 self-start duration-300  ease-in-out p-4 text-xl">
-                        <div className=" flex flex-wrap text-white ">
-                            <div className="flex flex-row">
-                                <p className=" font-bold text-nowrap">
-                                    {exp.title}
-                                </p>
-
-                                <i className="fas fa-xs fa-circle mx-2 self-center"></i>
-                            </div>
-
-                            <div className="flex flex-row">
-                                <p className="font-bold text-nowrap">
-                                    {exp.employer}
-                                </p>
-                                <i className="fas fa-xs fa-location-arrow ml-2 duration-300  ease-in-out self-center"></i>
-                            </div>
+                    <div className="flex flex-col gap-4 self-start duration-300  ease-in-out p-4">
+                        <div className="flex flex-col md:lg:flex-row text-white md:lg:items-center gap-2">
+                            <p className="font-bold text-nowrap text-xl">
+                                {exp.title}
+                            </p>
+                            <div className="w-5 border-[0.5px] max-lg:hidden"></div>
+                            <p className="font-bold text-nowrap text-lg text-white">
+                                {exp.employer}
+                            </p>
                         </div>
-                        <div className="text-xs text-gray-200 font-semibold text-nowrap mt-1">
+
+                        <div className="text-sm text-gray-200 font-semibold text-nowrap">
                             {exp.date}
                         </div>
+
                         <div className=" text-white ">{exp.decs}</div>
 
                         <div className="flex flex-wrap gap-4 my-4">
