@@ -54,7 +54,7 @@ const Experience = () => {
         "[&_div>div:nth-of-type(2)_div:nth-of-type(1)_div:nth-of-type(2)_i:nth-of-type(1)]:hover:-translate-y-1 " +
         "[&_div>div:nth-of-type(2)_div:nth-of-type(1)_div:nth-of-type(1)]:hover:text-text_primary_color " +
         "[&_div>div:nth-of-type(2)_div:nth-of-type(1)_div:nth-of-type(2)]:hover:text-text_primary_color " +
-        "hover:cursor-pointer hover:bg-light_gradient hover:bg-opacity-40 hover:shadow-md";
+        "hover:cursor-pointer hover:bg-light_gradient hover:bg-opacity-60 hover:shadow-md";
     return (
         <>
             {experienceInformation.map((exp) => (
@@ -85,7 +85,7 @@ const Experience = () => {
                                     <i className="fas fa-xs fa-location-arrow ml-2 transition self-center"></i>
                                 </div>
                             </div>
-                            <div className="ml-8 text-white">
+                            <div className="ml-8 text-white ">
                                 <ul className="list-disc">
                                     {exp.decs.map((t) => (
                                         <li>{t}</li>
@@ -95,7 +95,7 @@ const Experience = () => {
 
                             <div className="flex flex-wrap ml-8 gap-4">
                                 {exp.skills.map((skill) => (
-                                    <div className="rounded-full bg-text_primary_color bg-opacity-80 px-6 py-1  font-semibold text-sm">
+                                    <div className="rounded-full bg-text_primary_color px-6 py-1  font-semibold text-sm">
                                         {skill}
                                     </div>
                                 ))}

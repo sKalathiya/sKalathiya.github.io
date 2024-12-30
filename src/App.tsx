@@ -9,12 +9,12 @@ function App() {
     const [tab, setTab] = useState("About");
 
     return (
-        <section className="flex flex-row max-w-7xl mx-auto gap-8">
+        <section className="flex flex-row max-w-7xl mx-auto gap-8 ">
             <div className="sticky top-0 left-0 h-screen">
                 <Intro tab={tab} setTab={setTab} />
             </div>
 
-            <div className="w-full flex flex-col mb-12">
+            <div className="w-full flex flex-col mb-12 ">
                 <Section id="About" setTab={setTab}>
                     <About />
                 </Section>

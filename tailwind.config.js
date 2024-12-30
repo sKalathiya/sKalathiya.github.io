@@ -7,13 +7,23 @@ module.exports = {
         extend: {
             animation: {
                 "appear-from-bottom": "appear-from-bottom 1s ease-in-out",
+                "appear-from-right": "appear-from-right 2s ease-in-out",
+                "appear-from-left": "appear-from-left 2s ease-in-out",
                 "fade-in": "fade-in 1s ease-in",
                 squish: "squish 300ms ease-in-out",
             },
             keyframes: {
                 "appear-from-bottom": {
-                    from: { opacity: "0", transform: "translateY(50px)" },
+                    from: { opacity: "0", transform: "translateY(100px)" },
                     to: { opacity: "1", transform: "translateY(0)" },
+                },
+                "appear-from-right": {
+                    from: { opacity: "0", transform: "translateX(100px)" },
+                    to: { opacity: "1", transform: "translateX(0)" },
+                },
+                "appear-from-left": {
+                    from: { opacity: "0", transform: "translateX(-100px)" },
+                    to: { opacity: "1", transform: "translateX(0)" },
                 },
                 "fade-in": {
                     from: { opacity: 0 },
