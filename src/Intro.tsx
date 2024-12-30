@@ -9,7 +9,7 @@ const Intro = ({ tab, setTab }: IntroProps) => {
     return (
         <section
             id="intro"
-            className="flex flex-col h-full justify-between px-8 items-center"
+            className="flex flex-col md:lg:h-full px-8 items-center max-lg:items-start"
         >
             <section className="flex flex-col gap-2 mt-24 max-lg:mt-16 ">
                 <div className="text-5xl font-extrabold text-text_primary_color  max-lg:text-4xl ">
@@ -19,11 +19,11 @@ const Intro = ({ tab, setTab }: IntroProps) => {
                     Software Developer
                 </div>
                 <div className="text-white mt-4 animate-appear-from-bottom">
-                    Love crafting innovative, user-centric, and scalable
-                    solutions that bridge technology and real-world impact.
+                    I build innovative, user-centric, and scalable solutions
+                    that bridge technology and real-world impact.
                 </div>
             </section>
-            <section className="flex flex-col gap-4 mt-16 max-lg:hidden self-start">
+            <section className="flex flex-col gap-4 max-lg:hidden mt-8 self-start">
                 {tabs.map((t) => (
                     <a
                         className={
@@ -37,16 +37,16 @@ const Intro = ({ tab, setTab }: IntroProps) => {
                         }}
                         href={"#" + t}
                     >
-                        <div className="w-10 border-[0.5px] duration-200  ease-in-out"></div>
+                        <div className="w-10 border-[0.5px] duration-300  ease-in-out"></div>
                         <p className="ml-4">{t}</p>
                     </a>
                 ))}
             </section>
 
-            <section className="flex flex-row gap-8 mt-auto mb-16">
-                <i className="fas fa-lg fa-envelope text-white hover:text-text_primary_color cursor-pointer hover:-translate-y-1 duration-150 ease-in-out"></i>
-                <i className="fab fa-lg fa-github text-white hover:text-text_primary_color cursor-pointer hover:-translate-y-1 duration-150 ease-in-out"></i>
-                <i className="fab fa-lg fa-linkedin text-white hover:text-text_primary_color cursor-pointer hover:-translate-y-1 duration-150 ease-in-out"></i>
+            <section className="flex flex-row gap-8 max-lg:mt-8 mt-auto  mb-16">
+                <i className="fas fa-lg fa-envelope text-white hover:text-text_primary_color cursor-pointer hover:-translate-y-1 duration-300 ease-in-out"></i>
+                <i className="fab fa-lg fa-github text-white hover:text-text_primary_color cursor-pointer hover:-translate-y-1 duration-300 ease-in-out"></i>
+                <i className="fab fa-lg fa-linkedin text-white hover:text-text_primary_color cursor-pointer hover:-translate-y-1 duration-300 ease-in-out"></i>
             </section>
         </section>
     );

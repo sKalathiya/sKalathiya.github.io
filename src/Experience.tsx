@@ -2,14 +2,8 @@ const experienceInformation = [
     {
         date: "May 2021 - Dec 2021",
         employer: "Weapplinse Technology LLP",
-        title: "Software Developer",
-        decs: [
-            "Enhanced component reusability by 30% through React and TypeScript, reducing redundant code and improving maintainability.",
-            "Developed 5+ scalable APIs using express.js and integrated them seamlessly into client-facing applications.",
-            "Automated unit testing using Jest, increasing test coverage by 35% and improving software reliability.",
-            "Collaborated within Agile teams using Scrum methodology to deliver solutions effectively and on time.",
-            "Deployed and managed scalable web applications using AWS Elastic Beanstalk.",
-        ],
+        title: "Full Stack Developer",
+        decs: "As a Full Stack Developer, I focused on building scalable and maintainable applications using React and TypeScript. I improved component reusability by 30%, developed REST APIs with Express.js, and automated unit testing with Jest, increasing code reliability and coverage by 35%. Working in an Agile environment, I collaborated with cross-functional teams to deliver high-quality solutions. Additionally, I deployed and managed web applications using AWS Elastic Beanstalk, ensuring scalability and seamless performance.",
 
         skills: [
             "React",
@@ -28,14 +22,7 @@ const experienceInformation = [
         date: "Dec 2020 - Apr 2021",
         employer: "TechSmith Solutions",
         title: "Software Developer Intern",
-        decs: [
-            "Utilized Java to implement an efficient waste management system to enhance dustbin clearance efficiency.",
-            "Built a route optimization module using Dijkstra’s algorithm, cutting travel time by 30%.",
-            "Developed scalable data management solutions using MySQL, improving query performance by 35%",
-            "Conducted unit testing with JUnit, achieving 95% code coverage and ensuring software reliability.",
-            "Utilized Git for version control, and employed Maven for project build and dependency management.",
-        ],
-
+        decs: "During my internship, I contributed to the development of an efficient waste management system using Java and MySQL, which enhanced dustbin clearance efficiency by 30%. I designed a route optimization module with Dijkstra’s algorithm, reducing travel time significantly. My role involved creating scalable backend solutions, conducting unit testing with JUnit to ensure 95% code coverage, and managing dependencies with Maven. Collaborating within a dynamic team, I leveraged Git for version control to maintain smooth project workflows.",
         skills: [
             "Java",
             "Spring Boot",
@@ -52,8 +39,6 @@ const experienceInformation = [
 const Experience = () => {
     const hoverStyle =
         "[&_div>div:nth-of-type(2)_div:nth-of-type(1)_div:nth-of-type(2)_i:nth-of-type(1)]:hover:-translate-y-1 " +
-        "[&_div>div:nth-of-type(2)_div:nth-of-type(1)_div:nth-of-type(1)]:hover:text-text_primary_color " +
-        "[&_div>div:nth-of-type(2)_div:nth-of-type(1)_div:nth-of-type(2)]:hover:text-text_primary_color " +
         "hover:cursor-pointer hover:bg-light_gradient hover:shadow-lg";
     return (
         <>
@@ -64,42 +49,34 @@ const Experience = () => {
                         hoverStyle
                     }
                 >
-                    <div className="flex flex-row gap-4 items-start p-4 transition">
-                        <div className="text-xs text-gray-200 font-semibold text-nowrap mt-1 ">
+                    <div className="flex flex-col gap-4 self-start duration-300  ease-in-out p-4">
+                        <div className=" flex flex-wrap text-white ">
+                            <div className="flex flex-row">
+                                <p className=" font-bold text-nowrap">
+                                    {exp.title}
+                                </p>
+
+                                <i className="fas fa-xs fa-circle mx-2 self-center"></i>
+                            </div>
+
+                            <div className="flex flex-row">
+                                <p className="font-bold text-nowrap">
+                                    {exp.employer}
+                                </p>
+                                <i className="fas fa-xs fa-location-arrow ml-2 duration-300  ease-in-out self-center"></i>
+                            </div>
+                        </div>
+                        <div className="text-xs text-gray-200 font-semibold text-nowrap mt-1">
                             {exp.date}
                         </div>
-                        <div className="flex flex-col gap-4 self-start">
-                            <div className=" flex flex-wrap ml-8 text-white ">
-                                <div className="flex flex-row">
-                                    <p className=" font-bold text-nowrap">
-                                        {exp.title}
-                                    </p>
+                        <div className=" text-white ">{exp.decs}</div>
 
-                                    <i className="fas fa-xs fa-circle mx-2 self-center"></i>
+                        <div className="flex flex-wrap gap-4 my-4">
+                            {exp.skills.map((skill) => (
+                                <div className="rounded-full bg-text_primary_color px-6 py-1  font-semibold text-sm">
+                                    {skill}
                                 </div>
-
-                                <div className="flex flex-row">
-                                    <p className="font-bold text-nowrap">
-                                        {exp.employer}
-                                    </p>
-                                    <i className="fas fa-xs fa-location-arrow ml-2 transition self-center"></i>
-                                </div>
-                            </div>
-                            <div className="ml-8 text-white ">
-                                <ul className="list-disc">
-                                    {exp.decs.map((t) => (
-                                        <li>{t}</li>
-                                    ))}
-                                </ul>
-                            </div>
-
-                            <div className="flex flex-wrap ml-8 gap-4">
-                                {exp.skills.map((skill) => (
-                                    <div className="rounded-full bg-text_primary_color px-6 py-1  font-semibold text-sm">
-                                        {skill}
-                                    </div>
-                                ))}
-                            </div>
+                            ))}
                         </div>
                     </div>
                 </div>

@@ -1,6 +1,6 @@
 const About = () => {
     return (
-        <div className=" text-white font-normal h-screen leading-loose text-lg">
+        <div className=" text-white font-normal leading-loose text-lg">
             <p className="indent-10">
                 Hi, I'm Sahil Kalathiya! I’m a passionate Software Developer
                 with a knack for crafting elegant, scalable, and impactful
