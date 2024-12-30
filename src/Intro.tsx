@@ -44,9 +44,24 @@ const Intro = ({ tab, setTab }: IntroProps) => {
             </section>
 
             <section className="flex flex-row gap-8 max-lg:mt-8 mt-auto  mb-16">
-                <i className="fas fa-lg fa-envelope text-white hover:text-text_primary_color cursor-pointer hover:-translate-y-1 duration-300 ease-in-out"></i>
-                <i className="fab fa-lg fa-github text-white hover:text-text_primary_color cursor-pointer hover:-translate-y-1 duration-300 ease-in-out"></i>
-                <i className="fab fa-lg fa-linkedin text-white hover:text-text_primary_color cursor-pointer hover:-translate-y-1 duration-300 ease-in-out"></i>
+                <a
+                    className="fas fa-lg fa-envelope text-white hover:text-text_primary_color cursor-pointer hover:-translate-y-1 duration-300 ease-in-out"
+                    href="mailto:skalathiya1@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                ></a>
+                <a
+                    className="fab fa-lg fa-github text-white hover:text-text_primary_color cursor-pointer hover:-translate-y-1 duration-300 ease-in-out"
+                    href="https://github.com/skalathiya"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                ></a>
+                <a
+                    className="fab fa-lg fa-linkedin text-white hover:text-text_primary_color cursor-pointer hover:-translate-y-1 duration-300 ease-in-out"
+                    href="https://www.linkedin.com/in/sahilkalathiya/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                ></a>
             </section>
         </section>
     );
