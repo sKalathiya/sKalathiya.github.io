@@ -39,13 +39,13 @@ const experienceInformation = [
 const Experience = () => {
     const hoverStyle =
         "[&_div>div:nth-of-type(2)_div:nth-of-type(1)_div:nth-of-type(2)_i:nth-of-type(1)]:hover:-translate-y-1 " +
-        "hover:cursor-pointer hover:bg-light_gradient hover:shadow-lg";
+        "hover:cursor-pointer hover:shadow-lg";
     return (
         <>
             {experienceInformation.map((exp) => (
                 <div
                     className={
-                        "flex flex-col gap-4  animate-appear-from-bottom  rounded-lg animation-scroll " +
+                        "flex flex-col gap-4  animate-appear-from-bottom bg-light_gradient rounded-lg animation-scroll " +
                         hoverStyle
                     }
                 >
