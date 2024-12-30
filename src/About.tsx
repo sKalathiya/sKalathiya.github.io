@@ -1,23 +1,41 @@
 const About = () => {
     return (
-        <div className=" text-white font-semibold h-screen">
-            I’m a developer passionate about crafting accessible, pixel-perfect
-            user interfaces that blend thoughtful design with robust
-            engineering. My favorite work lies at the intersection of design and
-            development, creating experiences that not only look great but are
-            meticulously built for performance and usability. Currently, I'm a
-            Senior Front-End Engineer at Klaviyo, specializing in accessibility.
-            I contribute to the creation and maintenance of UI components that
-            power Klaviyo’s frontend, ensuring our platform meets web
-            accessibility standards and best practices to deliver an inclusive
-            user experience. In the past, I've had the opportunity to develop
-            software across a variety of settings — from advertising agencies
-            and large corporations to start-ups and small digital product
-            studios. Additionally, I also released a comprehensive video course
-            a few years ago, guiding learners through building a web app with
-            the Spotify API. In my spare time, I’m usually climbing, reading,
-            hanging out with my wife and two cats, or running around Hyrule
-            searching for Korok seeds K o r o k s e e d s .
+        <div className=" text-white font-normal h-screen leading-loose text-lg">
+            <p className="indent-10">
+                Hi, I'm Sahil Kalathiya! I’m a passionate Software Developer
+                with a knack for crafting elegant, scalable, and impactful
+                solutions. I thrive at the intersection of technology and
+                creativity, constantly learning and experimenting with new tools
+                to solve real-world problems.
+            </p>
+            <br />
+            <p className="indent-10">
+                With a strong foundation in computer science and a love for
+                coding, I enjoy transforming complex challenges into intuitive
+                digital experiences. Collaboration and continuous improvement
+                drive my work, whether I'm refining backend logic, enhancing
+                frontend usability, or optimizing database performance.
+            </p>
+            <br />
+            <p className="indent-10">
+                I believe that great software is built through a mix of
+                technical expertise, creativity, and teamwork. My journey as a
+                developer has been fueled by a commitment to excellence and a
+                desire to make a meaningful impact through technology. Whether
+                it’s designing efficient architectures, writing clean,
+                maintainable code, or collaborating with diverse teams, I am
+                dedicated to delivering solutions that not only meet but exceed
+                expectations. My focus is always on creating software that is
+                user-centric, reliable, and future-ready.
+            </p>
+            <br />
+            <p className="indent-10">
+                Outside of coding, I’m always curious—exploring new
+                technologies, diving into open-source projects, or brainstorming
+                innovative ideas. My approach combines meticulous attention to
+                detail with a commitment to delivering value-driven outcomes.
+                Let’s build something amazing together!
+            </p>
         </div>
     );
 };

@@ -54,7 +54,7 @@ const Experience = () => {
         "[&_div>div:nth-of-type(2)_div:nth-of-type(1)_div:nth-of-type(2)_i:nth-of-type(1)]:hover:-translate-y-1 " +
         "[&_div>div:nth-of-type(2)_div:nth-of-type(1)_div:nth-of-type(1)]:hover:text-text_primary_color " +
         "[&_div>div:nth-of-type(2)_div:nth-of-type(1)_div:nth-of-type(2)]:hover:text-text_primary_color " +
-        "hover:cursor-pointer hover:bg-light_gradient hover:bg-opacity-60 hover:shadow-md";
+        "hover:cursor-pointer hover:bg-light_gradient hover:shadow-lg";
     return (
         <>
             {experienceInformation.map((exp) => (

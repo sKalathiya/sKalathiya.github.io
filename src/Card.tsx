@@ -7,11 +7,14 @@ const Card = ({ project }: { project: projectProps }) => {
         "[&>div:nth-of-type(1)>div:nth-of-type(1)>div:nth-of-type(2)]:hover:w-16 ";
 
     return (
-        <div
+        <a
             className={
-                "flex flex-row max-md:flex-row gap-4 p-4 rounded-lg shadow-lg bg-light_gradient animate-appear-from-right items-start animation-scroll bg-opacity-60 " +
+                "flex flex-row max-md:flex-row gap-4 p-4 rounded-lg shadow-lg bg-light_gradient animate-appear-from-right items-start animation-scroll " +
                 hoverStyle
             }
+            href={project.github}
+            target="_blank"
+            rel="noopener noreferrer"
         >
             <img
                 src={project.img}
@@ -21,19 +24,12 @@ const Card = ({ project }: { project: projectProps }) => {
             <div>
                 <div className="text-white flex flex-row font-bold gap-2 items-center">
                     <div className="text-xl font-bold ">{project.title}</div>
-
                     <div className="w-10 border-[0.5px] duration-200  ease-in-out"></div>
-                    {project.github}
+                    GitHub
                     <i className="fas fa-xs fa-location-arrow transition self-center"></i>
                 </div>
 
-                <div className="text-white my-4 ml-2">
-                    <ul className="list-disc">
-                        {project.desc.map((t) => (
-                            <li>{t}</li>
-                        ))}
-                    </ul>
-                </div>
+                <div className="text-white my-4 ml-2">{project.desc}</div>
                 <div className="flex flex-wrap gap-4 my-4">
                     {project.skills.map((skill) => (
                         <div className="rounded-full bg-text_primary_color px-6 py-1  font-semibold text-sm">
@@ -42,7 +38,7 @@ const Card = ({ project }: { project: projectProps }) => {
                     ))}
                 </div>
             </div>
-        </div>
+        </a>
     );
 };
 

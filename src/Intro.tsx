@@ -19,11 +19,8 @@ const Intro = ({ tab, setTab }: IntroProps) => {
                     Software Developer
                 </div>
                 <div className="text-white mt-4 animate-appear-from-bottom">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
-                    <br /> Eum aut enim, adipisci quod dolor qui voluptatem.{" "}
-                    <br /> Quis aperiam excepturi dolorem in quos quo laborum
-                    itaque, <br />
-                    magni nisi ipsum <br /> cupiditate provident.
+                    Love crafting innovative, user-centric, and scalable
+                    solutions that bridge technology and real-world impact.
                 </div>
             </section>
             <section className="flex flex-col gap-4 mt-16 max-lg:hidden self-start">
