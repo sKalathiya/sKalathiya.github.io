@@ -49,7 +49,7 @@ const Experience = () => {
                         hoverStyle
                     }
                 >
-                    <div className="flex flex-col gap-4 self-start duration-300  ease-in-out p-4">
+                    <div className="flex flex-col gap-4 self-start duration-300  ease-in-out p-4 text-xl">
                         <div className=" flex flex-wrap text-white ">
                             <div className="flex flex-row">
                                 <p className=" font-bold text-nowrap">
