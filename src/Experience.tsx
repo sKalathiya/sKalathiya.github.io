@@ -3,7 +3,7 @@ const experienceInformation = [
         date: "May 2021 - Dec 2021",
         employer: "Weapplinse Technology LLP",
         title: "Full Stack Developer",
-        decs: "As a Full Stack Developer, I focused on building scalable and maintainable applications using React and TypeScript. I improved component reusability by 30%, developed REST APIs with Express.js, and automated unit testing with Jest, increasing code reliability and coverage by 35%. Working in an Agile environment, I collaborated with cross-functional teams to deliver high-quality solutions. Additionally, I deployed and managed web applications using AWS Elastic Beanstalk, ensuring scalability and seamless performance.",
+        decs: "As a Full Stack Developer, Developed scalable, user-focused web applications using React.js, TypeScript, and Redux, while designing and implementing secure RESTful APIs with Node.js and Express.js. Refactored legacy code adhering to SOLID principles, enhancing maintainability by 20%. Automated unit testing with Jest, increasing test coverage by 30% and reducing production bugs. Collaborated within Agile Scrum teams, achieving a 20% reduction in development time.",
 
         skills: [
             "React",
@@ -22,7 +22,7 @@ const experienceInformation = [
         date: "Dec 2020 - Apr 2021",
         employer: "TechSmith Solutions",
         title: "Software Developer Intern",
-        decs: "During my internship, I contributed to the development of an efficient waste management system using Java and MySQL, which enhanced dustbin clearance efficiency by 30%. I designed a route optimization module with Dijkstra’s algorithm, reducing travel time significantly. My role involved creating scalable backend solutions, conducting unit testing with JUnit to ensure 95% code coverage, and managing dependencies with Maven. Collaborating within a dynamic team, I leveraged Git for version control to maintain smooth project workflows.",
+        decs: "During my internship, Developed a scalable backend system for a waste management application using Java, enhancing data tracking through modular bean classes. Implemented a route optimization module leveraging Dijkstra’s algorithm, reducing travel time by 30%. Optimized MySQL database structures to improve query performance and minimize data redundancy. Achieved 95% code coverage with JUnit unit testing, ensuring software reliability. Utilized Git for version control and Apache Maven for efficient project builds and dependency management.",
         skills: [
             "Java",
             "Spring Boot",
